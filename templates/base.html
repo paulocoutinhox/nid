@@ -8,6 +8,9 @@
         <meta name="description" content="{% block description %}{% endblock description %}">
         <meta name="keywords" content="{% block keywords %}{% endblock keywords %}">
 
+        <meta name="author" content="{{ AUTHOR }}">
+        <meta name="robots" content="{% block robots %}index,follow{% endblock %}">
+
         <link rel="icon" href="{{ SITEURL }}/favicon.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="{{ SITEURL }}/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ SITEURL }}/favicon-32x32.png">
