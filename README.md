@@ -146,7 +146,7 @@ EXTRA_PATH_METADATA = {
 `SITEURL` and `DISQUS_SITENAME` must be set in `publishconf.py` and/or `pelicanconfig.py` to activate the Disqus comment system:
 
 ```python
-SITEURL = 'https://www.pcoutinho.com'
+SITEURL = 'https://pcoutinho.com'
 DISQUS_SITENAME = 'pcoutinho'
 ```
 
