@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ NID_INDEX_HEAD_TITLE }} {% if articles_page.has_previous() %}- {{ NID_INDEX_PAGE_NUMBER_TITLE }} {{ articles_page.number }} {% endif %}- {{ super() }}{% endblock title %}
+{% block title %}{{ NID_INDEX_HEAD_TITLE }} {% if articles_page.has_previous() %}- {{ NID_INDEX_PAGE_NUMBER_TITLE }} {{ articles_page.number }} {% endif %}| {{ super() }}{% endblock title %}
 {% block description %}{{ SITENAME }}, {{ SITESUBTITLE }}{% endblock description %}
 
 {% block headerstyle %}
