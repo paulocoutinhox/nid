@@ -3,6 +3,16 @@
 {% block title %}{{ NID_INDEX_HEAD_TITLE }} {% if articles_page.has_previous() %}- {{ NID_INDEX_PAGE_NUMBER_TITLE }} {{ articles_page.number }} {% endif %}| {{ super() }}{% endblock title %}
 {% block description %}{{ SITENAME }}, {{ SITESUBTITLE }}{% endblock description %}
 
+{% block meta %}
+    <meta property="og:title" content="{{ SITENAME }}" />
+    <meta property="og:site_name" content="{{ SITENAME }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ SITEURL }}/images/opengraph.png">
+    <meta property="og:url" content="{% if output_file == 'index.html' %} {{- SITEURL -}} {% else %} {{- SITEURL }}/{{ output_file -}} {% endif %}" />
+    <meta property="og:description" content="{{ SITESUBTITLE }}" />
+    <meta property="og:locale" content="{{ LOCALE[0] }}" />
+{% endblock meta %}
+
 {% block headerstyle %}
     {% if NID_HEADER_IMAGES %}
     <div class="header-container" style="background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('{{ SITEURL }}/images/{{ NID_HEADER_IMAGES }}'); background-position: center; background-size: cover;">
@@ -28,7 +38,7 @@
 {% endblock header %}
 
 {% block content %}
-    {% if DEFAULT_PAGINATION %}    
+    {% if DEFAULT_PAGINATION %}
     <div class="archive-container">
         <div class="container content archive">
             <h2><a href="{{ SITEURL }}/{{ articles_page.url }}">{{ NID_INDEX_CONTENT_TITLE }} {% if articles_page.has_previous() %}<small>- {{ NID_INDEX_PAGE_NUMBER_TITLE }} {{ articles_page.number }}</small>{% endif %}</a></h2>
