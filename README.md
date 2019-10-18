@@ -1,6 +1,6 @@
 # Nid
 
-Nid = ninho em francês
+Nid = nest in french
 
 Nid is a theme for [Pelican](http://docs.getpelican.com) 4.0+, a static site generator written in Python.
 
@@ -74,6 +74,7 @@ NID_ARCHIVES_CONTENT_TITLE = "Arquivos"
 NID_ARTICLE_HEADER_BY = "Por"
 NID_ARTICLE_HEADER_MODIFIED = "modificado"
 NID_ARTICLE_HEADER_IN = "na categoria"
+NID_ARTICLE_RELATED_TITLE = "Outros conteúdos relacionados"
 
 # author.html
 NID_AUTHOR_HEAD_TITLE = "Posts de"
