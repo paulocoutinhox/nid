@@ -15,6 +15,7 @@ It is inspired by: https://github.com/molivier/nest
 * **Google Analytics** support
 * **Piwik** support
 * RSS and Atom feeds
+* Related content
 
 ## Settings
 
