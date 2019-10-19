@@ -52,7 +52,7 @@ NID_SITEMAP_RSS_LINK = "RSS Feed"
 NID_SOCIAL_COLUMN_TITLE = "Redes sociais"
 NID_LINKS_COLUMN_TITLE = "Links"
 NID_COPYRIGHT_COLUMN_TITLE = "Copyright"
-NID_COPYRIGHT = "&copy; Pastor Paulo Coutinho 2019"
+NID_COPYRIGHT = "&copy; Paulo Coutinho 2019"
 
 # footer optional
 NID_FOOTER_HTML = ""
