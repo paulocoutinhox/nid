@@ -12,9 +12,11 @@
     <meta property="og:description" content="{{ SITESUBTITLE }}" />
     <meta property="og:locale" content="{{ LOCALE[0] }}" />
 
+    <meta property="twitter:card" content="summary" />
     <meta property="twitter:title" content="{{ SITENAME }} - {{ NID_INDEX_HEAD_TITLE }}{% if articles_page.has_previous() %} - {{ NID_INDEX_PAGE_NUMBER_TITLE }} {{ articles_page.number }}{% endif %}" />
     <meta property="twitter:description" content="{{ SITESUBTITLE }}" />
     <meta property="twitter:image" content="{{ SITEURL }}/images/opengraph.png">
+    <meta property="twitter:site" content="{{ SITENAME }}">
 {% endblock meta %}
 
 {% block headerstyle %}
