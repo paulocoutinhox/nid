@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
-{% block title %}{{ NID_INDEX_HEAD_TITLE }} {% if articles_page.has_previous() %}- {{ NID_INDEX_PAGE_NUMBER_TITLE }} {{ articles_page.number }} {% endif %}| {{ super() }}{% endblock title %}
-{% block description %}{{ SITENAME }}, {{ SITESUBTITLE }}{% endblock description %}
+{% block title %}{{ super() }} - {{ NID_INDEX_HEAD_TITLE }}{% if articles_page.has_previous() %} - {{ NID_INDEX_PAGE_NUMBER_TITLE }} {{ articles_page.number }}{% endif %}{% endblock title %}
+{% block description %}{{ SITENAME }} - {{ SITESUBTITLE }}{% if articles_page.has_previous() %} - {{ NID_INDEX_PAGE_NUMBER_TITLE }} {{ articles_page.number }}{% endif %}{% endblock description %}
 
 {% block meta %}
-    <meta property="og:title" content="{{ SITENAME }}" />
+    <meta property="og:title" content="{{ SITENAME }} - {{ NID_INDEX_HEAD_TITLE }}{% if articles_page.has_previous() %} - {{ NID_INDEX_PAGE_NUMBER_TITLE }} {{ articles_page.number }}{% endif %}" />
     <meta property="og:site_name" content="{{ SITENAME }}">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ SITEURL }}/images/opengraph.png">
