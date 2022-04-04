@@ -12,7 +12,7 @@ It is inspired by: https://github.com/molivier/nest
 * Featured article header image
 * **Pygments** syntax highlighting
 * **Disqus** support for comments
-* **Google Analytics** support
+* **Google Analytics v4** support
 * **Piwik** support
 * RSS and Atom feeds
 * Related content
