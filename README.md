@@ -25,22 +25,27 @@ The header-nav have a fixed heigth of 100px. This is the max size for the logo w
 
 The min-height for the background header is 360px. The image is displayed using background-size: cover; which scale the background image to be as large as possible so that the background area is completely covered by the background image. If smaller than screen, the image is repeated to fit the background area.
 
-### Pelican.conf example
+### Pelican configuration example
 
 ```python
+from datetime import datetime
+
 # Nid Template
 THEME = "nid"
 MENUITEMS = [("Início", "/"), ("Categorias", "/categories.html")]
 
 # use minified CSS
-NID_CSS_MINIFY = True
+NID_MINIFY_CSS = True
 
 # add header background image from content/images : 'background.jpg'
+SITELOGO = "/images/logo.png"
+REL_CANONICAL = True
 NID_HEADER_IMAGES = ""
-NID_HEADER_LOGO = "/images/logo.png"
-NID_REL_CANONICAL_LINK = True
 
 # footer
+COPYRIGHT_YEAR = datetime.now().year
+COPYRIGHT_NAME = "Paulo Coutinho"
+
 NID_SITEMAP_COLUMN_TITLE = "Mapa do site"
 NID_SITEMAP_MENU = [
     ("Arquivos", "/archives.html"),
@@ -52,7 +57,6 @@ NID_SITEMAP_RSS_LINK = "RSS Feed"
 NID_SOCIAL_COLUMN_TITLE = "Redes sociais"
 NID_LINKS_COLUMN_TITLE = "Links"
 NID_COPYRIGHT_COLUMN_TITLE = "Copyright"
-NID_COPYRIGHT = "&copy; Paulo Coutinho 2019"
 
 # footer optional
 NID_FOOTER_HTML = ""
@@ -148,8 +152,8 @@ EXTRA_PATH_METADATA = {
 `SITEURL` and `DISQUS_SITENAME` must be set in `publishconf.py` and/or `pelicanconfig.py` to activate the Disqus comment system:
 
 ```python
-SITEURL = 'https://pcoutinho.com'
-DISQUS_SITENAME = 'pcoutinho'
+SITEURL = 'https://your-website.com'
+DISQUS_SITENAME = 'your-disqus-sitename'
 ```
 
 ## Third-party assets
