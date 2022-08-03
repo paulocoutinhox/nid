@@ -33,13 +33,15 @@ from datetime import datetime
 # Nid Template
 THEME = "nid"
 MENUITEMS = [("Início", "/"), ("Categorias", "/categories.html")]
+REL_CANONICAL = True
+
+# set logo
+SITELOGO = "/images/logo.png"
 
 # use minified CSS
 NID_MINIFY_CSS = True
 
 # add header background image from content/images : 'background.jpg'
-SITELOGO = "/images/logo.png"
-REL_CANONICAL = True
 NID_HEADER_IMAGES = ""
 
 # footer
