@@ -30,8 +30,9 @@ The min-height for the background header is 360px. The image is displayed using 
 ```python
 from datetime import datetime
 
-# Nid Template
+# theme
 THEME = "nid"
+CURRENT_DATETIME = datetime.now().timestamp()
 MENUITEMS = [("Início", "/"), ("Categorias", "/categories.html")]
 REL_CANONICAL = True
 
@@ -43,6 +44,9 @@ NID_MINIFY_CSS = True
 
 # add header background image from content/images : 'background.jpg'
 NID_HEADER_IMAGES = ""
+
+# add header image banner: {'image': 'images/xyz.jpg', 'caption': 'Test Banner', 'link': 'https://github.com/paulocoutinhox/nid'}
+NID_HEADER_BANNERS = []
 
 # footer
 COPYRIGHT_YEAR = datetime.now().year
