@@ -40,7 +40,7 @@ REL_CANONICAL = True
 # set logo
 SITELOGO = "/images/logo.png"
 
-# use minified CSS
+# use minified css
 NID_MINIFY_CSS = True
 
 # add header background image from content/images : 'background.jpg'
