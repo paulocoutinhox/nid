@@ -144,6 +144,12 @@
             <!-- /Google Analytics -->
         {% endif %}
 
+        {% if GOOGLE_ADSENSE_AUTO %}
+        <!-- Google AdSense Auto -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ GOOGLE_ADSENSE_AUTO }}" crossorigin="anonymous"></script>
+        <!-- /Google AdSense Auto -->
+        {% endif %}
+
         {% if MICROSOFT_CLARITY %}
             <!-- Microsoft Clarity -->
             <script type="text/javascript">

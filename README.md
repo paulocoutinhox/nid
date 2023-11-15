@@ -13,6 +13,7 @@ It is inspired by: https://github.com/molivier/nest
 * **Pygments** syntax highlighting
 * **Disqus** support for comments
 * **Google Analytics v4** support
+* **Google AdSense** support
 * **Piwik** support
 * RSS and Atom feeds
 * Related content
@@ -47,6 +48,9 @@ NID_HEADER_IMAGES = ""
 
 # add header image banner: {'image': 'images/xyz.jpg', 'caption': 'Test Banner', 'link': 'https://github.com/paulocoutinhox/nid'}
 NID_HEADER_BANNERS = []
+
+# google adsense
+GOOGLE_ADSENSE_AUTO = "ca-pub-123"
 
 # footer
 COPYRIGHT_YEAR = datetime.now().year
