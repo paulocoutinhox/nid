@@ -147,10 +147,6 @@
         {% if GOOGLE_ADSENSE_PUB_ID %}
         <!-- Google AdSense -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ GOOGLE_ADSENSE_PUB_ID }}" crossorigin="anonymous"></script>
-
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-       </script>
         <!-- /Google AdSense -->
         {% endif %}
 
@@ -295,7 +291,7 @@
 
 <!-- Google AdSense Top -->
 {% if GOOGLE_ADSENSE_TOP %}
-<center>
+<center style="margin: 20px 0">
     <ins
         class="adsbygoogle"
         style="display:block"
@@ -306,6 +302,9 @@
         data-full-width-responsive="true"
         {% endif %}
     ></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </center>
 {% endif %}
 <!-- Google AdSense Top -->
@@ -317,7 +316,7 @@
 
 <!-- Google AdSense Bottom -->
 {% if GOOGLE_ADSENSE_BOTTOM %}
-<center>
+<center style="margin: 20px 0">
     <ins
         class="adsbygoogle"
         style="display:block"
@@ -328,6 +327,9 @@
         data-full-width-responsive="true"
         {% endif %}
     ></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </center>
 {% endif %}
 <!-- Google AdSense Bottom -->
