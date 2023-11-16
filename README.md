@@ -50,17 +50,15 @@ NID_HEADER_IMAGES = ""
 NID_HEADER_BANNERS = []
 
 # google adsense
-GOOGLE_ADSENSE_AUTO = "ca-pub-123"
+GOOGLE_ADSENSE_PUB_ID = "ca-pub-123"
 
 GOOGLE_ADSENSE_TOP = {
-    "id": "ca-pub-123",
     "slot": "123456",
     "format": "auto",
     "responsive": True
 }
 
 GOOGLE_ADSENSE_BOTTOM = {
-    "id": "ca-pub-123",
     "slot": "123456",
     "format": "auto",
     "responsive": True
