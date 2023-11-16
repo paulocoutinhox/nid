@@ -289,10 +289,50 @@
 {% endif %}
 <!-- /Header Banners -->
 
+<!-- Google AdSense Top -->
+{% if GOOGLE_ADSENSE_TOP %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ GOOGLE_ADSENSE_TOP.id }}"
+     crossorigin="anonymous"></script>
+<ins
+    class="adsbygoogle"
+    style="display:block"
+    data-ad-client="{{ GOOGLE_ADSENSE_TOP.id }}"
+    data-ad-slot="{{ GOOGLE_ADSENSE_TOP.slot }}"
+    data-ad-format="{{ GOOGLE_ADSENSE_TOP.format }}"
+    {% if GOOGLE_ADSENSE_TOP.responsive %}
+    data-full-width-responsive="true"
+    {% endif %}
+></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{% endif %}
+<!-- Google AdSense Top -->
+
 <!-- Content -->
 {% block content %}
 {% endblock %}
 <!-- /Content -->
+
+<!-- Google AdSense Bottom -->
+{% if GOOGLE_ADSENSE_BOTTOM %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ GOOGLE_ADSENSE_BOTTOM.id }}"
+     crossorigin="anonymous"></script>
+<ins
+    class="adsbygoogle"
+    style="display:block"
+    data-ad-client="{{ GOOGLE_ADSENSE_BOTTOM.id }}"
+    data-ad-slot="{{ GOOGLE_ADSENSE_BOTTOM.slot }}"
+    data-ad-format="{{ GOOGLE_ADSENSE_BOTTOM.format }}"
+    {% if GOOGLE_ADSENSE_BOTTOM.responsive %}
+    data-full-width-responsive="true"
+    {% endif %}
+></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+{% endif %}
+<!-- Google AdSense Bottom -->
 
 <!-- Footer -->
 <div class="footer gradient-2">

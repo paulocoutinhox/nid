@@ -51,6 +51,8 @@ NID_HEADER_BANNERS = []
 
 # google adsense
 GOOGLE_ADSENSE_AUTO = "ca-pub-123"
+GOOGLE_ADSENSE_TOP = "ca-pub-123"
+GOOGLE_ADSENSE_BOTTOM = "ca-pub-123"
 
 # footer
 COPYRIGHT_YEAR = datetime.now().year
