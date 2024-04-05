@@ -49,6 +49,12 @@ NID_HEADER_IMAGES = ""
 # add header image banner: {'image': 'images/xyz.jpg', 'caption': 'Test Banner', 'link': 'https://github.com/paulocoutinhox/nid'}
 NID_HEADER_BANNERS = []
 
+# show banner indicators if visible
+NID_HEADER_BANNERS_INDICATORS = True
+
+# show banner navigators if visible
+NID_HEADER_BANNERS_NAVIGATORS = True
+
 # google adsense
 GOOGLE_ADSENSE_PUB_ID = "ca-pub-123"
 
